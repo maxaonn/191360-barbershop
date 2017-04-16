@@ -27,23 +27,26 @@
 			<div class="breadcrumbs">
 				<a href="#">Главная</a> >> <a href="#">Магазин</a> >> <span class="breadcrumbs-active">Средства для ухода</span>
 			</div>
-			<div class="filter">
+			<div class="catalog-filter">
 				<form action="#" method="post">
-				<h2>Производители:</h2><br>
-				<input type="checkbox" name="producer" id="baxter-of-california" value="baxter-of-california" checked><label for="baxter-of-california">Baxter of California</label><br>
-				<input type="checkbox" name="producer" id="mr-natty" value="mr-natty"><label for="mr-natty">Mr Natty</label><br>
-				<input type="checkbox" name="producer" id="suavetico" value="suavecito" checked><label for="suavetico">Suavecito</label><br>
-				<input type="checkbox" name="producer" id="malin-goetz" value="malin-goetz"><label for="malin-goetz">Malin+Goetz</label><br>
-				<input type="checkbox" name="producer" id="murrays" value="murrays"><label for="murrays">Murray's</label><br>
-				<input type="checkbox" name="producer" id="american-crew" value="american-crew" checked><label for="american-crew">American crew</label><br>
-				<h2>Группы товаров:</h2><br>
-				<input type="radio" name="product-group" id="shaving-accessories" value="shaving-accessories"><label for="shaving-accessories">Бритвенные принадлежности</label>
-				<input type="radio" name="product-group" id="care-products" value="care-products" checked><label for="care-products">Средства для ухода</label>
-				<input type="radio" name="product-group" id="accessories" value="accessories"><label for="accessories">Аксессуары</label>
-				<input type="submit" value="Показать" class="btn">
+					<div class="filter-producer">
+						<span>Производители:</span>
+						<input type="checkbox" name="producer" id="baxter-of-california" value="baxter-of-california" checked><label for="baxter-of-california">Baxter of California</label><br>
+						<input type="checkbox" name="producer" id="mr-natty" value="mr-natty"><label for="mr-natty">Mr Natty</label><br>
+						<input type="checkbox" name="producer" id="suavetico" value="suavecito" checked><label for="suavetico">Suavecito</label><br>
+						<input type="checkbox" name="producer" id="malin-goetz" value="malin-goetz"><label for="malin-goetz">Malin+Goetz</label><br>
+						<input type="checkbox" name="producer" id="murrays" value="murrays"><label for="murrays">Murray's</label><br>
+						<input type="checkbox" name="producer" id="american-crew" value="american-crew" checked><label for="american-crew">American crew</label><br>
+					</div>
+					<div class="filter-product-group">
+						<input type="radio" name="product-group" id="shaving-accessories" value="shaving-accessories"><label for="shaving-accessories">Бритвенные принадлежности</label>
+						<input type="radio" name="product-group" id="care-products" value="care-products" checked><label for="care-products">Средства для ухода</label>
+						<input type="radio" name="product-group" id="accessories" value="accessories"><label for="accessories">Аксессуары</label>
+						<input type="submit" value="Показать" class="btn">
+					</div>
 				</form>
 			</div>
-			<section class="product-items">
+			<div class="product-items">
 				<article class="catalog-item">
 					<img src="#" alt="Набор для путешествий Baxter of California" width="220" height="165">
 					<h3>Набор для путешествий <span class="catalog-item-producer">«Baxter of California»</span></h3>
@@ -80,29 +83,34 @@
 					<span class="item-price">3 900 руб.</span>
 					<a class="btn">Купить</a>
 				</article>
-				<div class="page-selector">
-					<a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>
+				<div class="pagination">
+					<ul>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
 				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="container">
-				<section class="footer-contacts">
+				<div class="footer-contacts">
 					Барбершоп «Бородинский»<br>
 	          		Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 	          		<a href="#">Как нас найти?</a><br>
 	          		Телефон: +7 (812) 666-02-66
-				</section>
-				<section class="footer-social">
+				</div>
+				<div class="footer-social">
 					<p>Давайте дружить!</p>
 					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
 					<a href="#" class="social-btn social-btn-fb">Facebook</a>
 					<a href="#" class="social-btn social-btn-inst">Instagram</a>
-				</section>
-				<section class="footer-copyright">
+				</div>
+				<div class="footer-copyright">
 					<p>Разработано:</p>
 					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-				</section>
+				</div>
 			</div>
 		</footer>
 	</body>
