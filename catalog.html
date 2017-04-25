@@ -6,8 +6,8 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="container">
+		<header class="page-header">
+			<div class="container clearfix">
 				<nav class="main-navigation">
 					<ul>
 						<li><a href="index.html"><img src="img/header-logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a></li>
@@ -23,28 +23,28 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
-			<h1>Средства для ухода</h1>
+		<main class="container clearfix">
+			<h1 class="page-heading">Средства для ухода</h1>
 			<div class="breadcrumbs">
 				<a href="#">Главная</a> >> <a href="#">Магазин</a> >> <span class="breadcrumbs-active">Средства для ухода</span>
 			</div>
 			<div class="catalog-filter">
-				<form action="#" method="post">
-					<div class="filter-producer">
-						<span>Производители:</span>
+				<form action="#" method="get">
+					<fieldset class="filter-producer">
+						<legend>Производители:</legend>
 						<input type="checkbox" name="producer" id="baxter-of-california" value="baxter-of-california" checked><label for="baxter-of-california">Baxter of California</label><br>
 						<input type="checkbox" name="producer" id="mr-natty" value="mr-natty"><label for="mr-natty">Mr Natty</label><br>
 						<input type="checkbox" name="producer" id="suavetico" value="suavecito" checked><label for="suavetico">Suavecito</label><br>
 						<input type="checkbox" name="producer" id="malin-goetz" value="malin-goetz"><label for="malin-goetz">Malin+Goetz</label><br>
 						<input type="checkbox" name="producer" id="murrays" value="murrays"><label for="murrays">Murray's</label><br>
 						<input type="checkbox" name="producer" id="american-crew" value="american-crew" checked><label for="american-crew">American crew</label><br>
-					</div>
-					<div class="filter-product-group">
-						<span>Группы товаров:</span>
+					</fieldset>
+					<fieldset class="filter-product-group">
+						<legend>Группы товаров:</legend>
 						<input type="radio" name="product-group" id="shaving-accessories" value="shaving-accessories"><label for="shaving-accessories">Бритвенные принадлежности</label>
 						<input type="radio" name="product-group" id="care-products" value="care-products" checked><label for="care-products">Средства для ухода</label>
 						<input type="radio" name="product-group" id="accessories" value="accessories"><label for="accessories">Аксессуары</label>
-					</div>
+					</fieldset>
 					<div class="filter-button">
 						<input type="submit" value="Показать" class="btn">
 					</div>
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="main-footer">
+		<footer class="page-footer">
 			<div class="container">
 				<div class="footer-contacts">
 					Барбершоп «Бородинский»<br>
